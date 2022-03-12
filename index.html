@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper wrapper__header">
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    <object type="image/svg+xml" data="./assets/svg/logo.svg" class="logo-bird">
+                        Your browser does not support SVG
+                     </object>
+                </a>
+            </div>
+            <nav class="header__nav">
+                <ul class="nav-items">
+                    <li class="nav__item"><a class="nav__link solovey active" data-sound="solovey" href="#">Соловей</a></li>
+                    <li class="nav__item"><a class="nav__link drozd" data-sound="drozd" href="#">Дрозд</a></li>
+                    <li class="nav__item"><a class="nav__link zarynka" data-sound="zarynka" href="#">Малиновка</a></li>
+                    <li class="nav__item"><a class="nav__link javoronok" data-sound="javoronok" href="#">Жаворонок</a></li>
+                    <li class="nav__item"><a class="nav__link slavka" data-sound="slavka" href="#">Славка</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <button class="play">
+        </button>
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper wrapper__footer">
+            <div class="footer-info">
+                <p class="copyright">©</p>
+                <p class="year">2022</p>
+                <a href="https://github.com/TomTylorr?tab=repositories" class="github">github</a>
+            </div>
+            <a href="https://rs.school/js-stage0/" class="rss-logo">
+            </a>
+        </div>
+    </footer>
+
+    <audio src="assets/audio/solovey.mp3" data-sound="solovey"></audio>
+    <audio src="assets/audio/drozd.mp3" data-sound="drozd"></audio>
+    <audio src="assets/audio/zarynka.mp3" data-sound="zarynka"></audio>
+    <audio src="assets/audio/javoronok.mp3" data-sound="javoronok"></audio>
+    <audio src="assets/audio/slavka.mp3" data-sound="slavka"></audio>
+    
+    <script src="index.js"></script>
+</body>
+</html>

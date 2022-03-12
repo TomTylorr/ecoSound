@@ -1,0 +1,210 @@
+html {
+    scroll-behavior: smooth; 
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(32, 209, 233);;
+}
+
+h1 {
+    margin: 0;
+}
+
+h3 {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: rgb(32, 209, 233);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transition: 0.6s;   
+}
+
+.logo-bird {
+    cursor: pointer;
+}
+
+.svg-bird {
+    cursor: pointer;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    list-style: none;
+}
+
+.nav__item {
+    padding: 0 20px;
+    font-size: 20px;
+    line-height: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link:hover {
+    color: #f233af;
+    transition: 0.6s;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 120px);
+    min-height: 280px;
+    background-image: url(./assets/img/forest.jpg);
+    background-size: cover;
+}
+
+.play {
+    width: 160px;
+    height: 160px;
+    background-image: url(./assets/svg/play.svg);
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    transition: .3s;
+}
+
+.pause {
+    width: 160px;
+    height: 160px;
+    background-image: url(./assets/svg/pause.svg);
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+    transition: .3s;
+}
+
+.active {
+    color: #f233af;
+}
+
+.play:hover {
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
+    cursor: pointer;
+}
+
+.wrapper__footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rss-logo:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+    transition: 0.6s; 
+}
+
+.svg-rss {
+    cursor: pointer;
+}
+
+.footer-info {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.copyright {
+    padding-right: 20px;
+}
+
+.year {
+    padding-right: 20px;
+}
+
+.github {
+    text-decoration: none;
+    color:rgb(255, 255, 255)
+}
+
+.github:hover {
+    color: #f233af;
+    transition: 0.6s;
+}
+
+.rss-logo {
+    display: flex;
+    align-self: center;
+    width: 135px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(./assets/svg/rss.svg);
+    transition: .3s;
+
+}
+
+@media (max-width: 1400px) {
+    .wrapper {
+        width: auto;
+    }
+
+    .wrapper__header {
+        flex-wrap: wrap;
+    }
+
+    .nav-items {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 740px) {
+    .wrapper__header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .header {
+        height: 200px;
+    }
+    
+    .header__nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .wrapper__footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
